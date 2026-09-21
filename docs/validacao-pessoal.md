@@ -42,3 +42,26 @@ Durante os testes, o agente inicialmente utilizou linguagem causal para
 explicar o crescimento dos atrasos. Como os dados demonstram associação
 temporal, mas não causalidade, o metadado de `hora_partida_prevista` e as
 instruções do agente foram revisados.
+
+### P3 — Pontualidade e cancelamento por companhia
+
+Os valores apresentados pelo agente estavam coerentes com a consulta SQL de referência.
+
+Durante o teste, porém, a pergunta combinava dois critérios diferentes:
+pontualidade e taxa de cancelamento. A companhia com maior pontualidade não era
+necessariamente a mesma com a menor taxa de cancelamento.
+
+Isso mostrou a importância de não transformar automaticamente métricas distintas
+em um único ranking ou afirmar um vencedor geral sem definir explicitamente um
+critério combinado.
+
+### P4 — Doméstico x internacional
+
+A resposta foi consistente com a consulta SQL de referência.
+
+No período analisado, os voos internacionais apresentaram atraso médio de partida
+superior ao dos voos domésticos. O agente também apresentou separadamente o
+percentual de voos atrasados e os volumes utilizados na comparação.
+
+Esse teste foi considerado validado porque a resposta permaneceu descritiva e
+baseada nas métricas disponíveis.
