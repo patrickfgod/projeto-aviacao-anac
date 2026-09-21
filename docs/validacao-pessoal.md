@@ -65,3 +65,19 @@ percentual de voos atrasados e os volumes utilizados na comparação.
 
 Esse teste foi considerado validado porque a resposta permaneceu descritiva e
 baseada nas métricas disponíveis.
+
+### P5 — Recuperação de atraso em voo
+
+Os resultados numéricos foram coerentes com a consulta SQL de referência.
+
+A métrica `minutos_recuperados` representa a diferença entre o atraso de partida
+e o atraso de chegada. Um valor positivo indica que parte do atraso foi reduzida
+durante o voo, mas não significa necessariamente que a aeronave chegou no horário.
+
+Durante a validação, foi importante evitar interpretações como "maior eficiência"
+ou "melhor operação" baseadas apenas nessa métrica. A resposta final deve apresentar
+a recuperação observada sem transformar esse resultado isolado em uma avaliação
+geral da companhia.
+
+Esse comportamento motivou a inclusão de guardrails de interpretação nas
+instruções do Genie.
