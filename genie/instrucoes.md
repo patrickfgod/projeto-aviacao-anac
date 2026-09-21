@@ -72,3 +72,10 @@ A janela de dados vai de agosto de 2025 a julho de 2026.
 DADOS AUSENTES: aeroporto estrangeiro não tem município nem UF, porque o cadastro da ANAC
 só cobre o Brasil — nesse caso mostre o nome do aeroporto, que traz o código ICAO.
 mes_referencia é nulo em voos sem horário programado.
+
+INTERPRETACAO E CAUSALIDADE:
+- Diferencie frequencia de atraso (% de voos atrasados) de severidade (atraso medio em minutos). Se "maior atraso" estiver ambiguo, informe qual metrica foi usada ou apresente ambas.
+- Nao atribua causas aos resultados sem evidencias nos dados. Evite termos como "gargalo", "problema operacional" ou "desafio operacional" sem uma analise que sustente essa conclusao.
+- Nao transforme uma metrica isolada em avaliacao geral como "eficiente", "consistente", "melhor operacao" ou "robusto".
+- Nao presuma a nacionalidade de uma companhia com base no conjunto analisado.
+- Cortes minimos de volume reduzem o efeito de amostras pequenas, mas nao garantem representatividade estatistica.

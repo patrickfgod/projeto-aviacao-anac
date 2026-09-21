@@ -8,7 +8,35 @@ A VoeBem Analytics é a consultoria fictícia usada no projeto: o objetivo é in
 
 Siga o **[Comece aqui — guia para iniciantes](docs/comece-aqui.md)**: do download dos materiais à primeira consulta. O percurso é pelo navegador, com os dados incluídos e sem instalar Python ou Git no computador.
 
-**Estado do material:** preparado para apoiar as aulas. A execução completa em um workspace novo ainda precisa ser validada.
+**Estado desta versão do fork:** execução completa validada em um workspace Databricks pessoal em 21/09/2026, incluindo as camadas Bronze, Silver e Gold, pipeline de qualidade e testes do Genie Agent. Os resultados e as ressalvas encontradas durante a validação estão documentados em [`docs/validacao-pessoal.md`](docs/validacao-pessoal.md).
+
+## Minha execução e refinamentos
+
+Nesta versão do fork, executei o pipeline completo no Databricks e validei os resultados utilizando as consultas SQL de referência do projeto.
+
+Além da execução do pipeline, realizei testes manuais do Genie Agent e refinei seus metadados e instruções após identificar ambiguidades de interpretação, especialmente relacionadas a causalidade, rankings e métricas de atraso.
+
+Os testes realizados e as ressalvas encontradas estão documentados em [`docs/validacao-pessoal.md`](docs/validacao-pessoal.md).
+
+## Resultados observados
+
+- A tabela Gold `obt_voos` foi materializada com 1.014.664 registros de etapas de voo no período analisado.
+- Voos internacionais apresentaram atraso médio de partida de 19,36 minutos, contra 5,13 minutos nos voos domésticos.
+- O percentual de voos atrasados foi de 25,37% nos voos internacionais e 15,86% nos domésticos.
+- A validação do Genie Agent identificou ambiguidades entre frequência e severidade de atraso e também usos indevidos de linguagem causal, levando ao refinamento dos metadados e das instruções do agente.
+
+## Tecnologias e conceitos praticados
+
+- Databricks e Spark
+- Python e PySpark
+- SQL
+- Delta Lake
+- Arquitetura Medallion: Bronze, Silver e Gold
+- Pipelines de qualidade e quarentena de dados
+- Modelagem analítica e OBT
+- Governança e documentação de metadados
+- Genie Agent e consultas em linguagem natural
+- Validação de respostas de IA contra consultas SQL de referência
 
 ## Estrutura
 

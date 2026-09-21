@@ -113,7 +113,7 @@ COMENTARIOS_OBT = {
     "partida_prevista":       "Data e hora que a companhia programou para a partida, na hora local do aeroporto de origem.",
     "partida_prevista_data":  "Data programada da partida. Use para series diarias e para recortar periodo.",
     "partida_prevista_hora":  "Hora e minuto programados da partida, no formato HH:mm, para leitura.",
-    "hora_partida_prevista":  "Hora cheia programada da partida, de 0 a 23. E a coluna certa para analisar o efeito cascata do atraso ao longo do dia.",
+    "hora_partida_prevista": "Hora cheia programada da partida, de 0 a 23. Use para analisar padrões de atraso por hora do dia. Permite observar associacoes temporais, mas nao determinar causalidade.",
     "dia_semana":             "Dia da semana da partida programada, por extenso e em minusculas (domingo a sabado).",
     "mes_referencia":         "Primeiro dia do mes da partida programada, para agregacao mensal. E nulo nos voos que nao tem horario previsto informado.",
     "partida_real":           "Data e hora em que a aeronave efetivamente partiu. Nulo em voo cancelado.",
