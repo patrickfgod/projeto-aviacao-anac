@@ -10,6 +10,14 @@ Siga o **[Comece aqui — guia para iniciantes](docs/comece-aqui.md)**: do downl
 
 **Estado desta versão do fork:** execução completa validada em um workspace Databricks pessoal em 21/09/2026, incluindo as camadas Bronze, Silver e Gold, pipeline de qualidade e testes do Genie Agent. Os resultados e as ressalvas encontradas durante a validação estão documentados em [`docs/validacao-pessoal.md`](docs/validacao-pessoal.md).
 
+## Minha execução e refinamentos
+
+Nesta versão do fork, executei o pipeline completo no Databricks e validei os resultados utilizando as consultas SQL de referência do projeto.
+
+Além da execução do pipeline, realizei testes manuais do Genie Agent e refinei seus metadados e instruções após identificar ambiguidades de interpretação, especialmente relacionadas a causalidade, rankings e métricas de atraso.
+
+Os testes realizados e as ressalvas encontradas estão documentados em [`docs/validacao-pessoal.md`](docs/validacao-pessoal.md).
+
 ## Estrutura
 
 - `dados/`: 15 CSVs da ANAC incluídos no material original: 12 meses de VRA (agosto/2025 a julho/2026) e três cadastros de referência.
