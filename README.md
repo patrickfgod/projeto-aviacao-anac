@@ -18,6 +18,26 @@ Além da execução do pipeline, realizei testes manuais do Genie Agent e refine
 
 Os testes realizados e as ressalvas encontradas estão documentados em [`docs/validacao-pessoal.md`](docs/validacao-pessoal.md).
 
+## Resultados observados
+
+- A tabela Gold `obt_voos` foi materializada com 1.014.664 registros de etapas de voo no período analisado.
+- Voos internacionais apresentaram atraso médio de partida de 19,36 minutos, contra 5,13 minutos nos voos domésticos.
+- O percentual de voos atrasados foi de 25,37% nos voos internacionais e 15,86% nos domésticos.
+- A validação do Genie Agent identificou ambiguidades entre frequência e severidade de atraso e também usos indevidos de linguagem causal, levando ao refinamento dos metadados e das instruções do agente.
+
+## Tecnologias e conceitos praticados
+
+- Databricks e Spark
+- Python e PySpark
+- SQL
+- Delta Lake
+- Arquitetura Medallion: Bronze, Silver e Gold
+- Pipelines de qualidade e quarentena de dados
+- Modelagem analítica e OBT
+- Governança e documentação de metadados
+- Genie Agent e consultas em linguagem natural
+- Validação de respostas de IA contra consultas SQL de referência
+
 ## Estrutura
 
 - `dados/`: 15 CSVs da ANAC incluídos no material original: 12 meses de VRA (agosto/2025 a julho/2026) e três cadastros de referência.
