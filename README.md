@@ -8,7 +8,7 @@ A VoeBem Analytics é a consultoria fictícia usada no projeto: o objetivo é in
 
 Siga o **[Comece aqui — guia para iniciantes](docs/comece-aqui.md)**: do download dos materiais à primeira consulta. O percurso é pelo navegador, com os dados incluídos e sem instalar Python ou Git no computador.
 
-**Estado do material:** preparado para apoiar as aulas. A execução completa em um workspace novo ainda precisa ser validada.
+**Estado desta versão do fork:** execução completa validada em um workspace Databricks pessoal em 21/09/2026, incluindo as camadas Bronze, Silver e Gold, pipeline de qualidade e testes do Genie Agent. Os resultados e as ressalvas encontradas durante a validação estão documentados em [`docs/validacao-pessoal.md`](docs/validacao-pessoal.md).
 
 ## Estrutura
 
